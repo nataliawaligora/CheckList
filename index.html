@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang='eng'>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+</head>
+<body ng-app="checkList">
+
+<form ng-submit="addItem()" class=" form-group  checkListBackground"
+      ng-controller="CheckListController">
+    <input class=" product form-control" type="text"  ng-model="text" name="text" placeholder="Write the product"/>
+    <input class="form-control" class="col-lg-4" type="Submit" value="+Add"  />
+
+    <ul class="list-group">
+
+        <li ng-click="" class="list-group-item " ng-repeat="item in items"><input type="checkbox"/>{{item.title}}</li>
+    </ul>
+
+</form>
+
+<!--Skrypty zewnętrzne-->
+<script type="text/javascript" src="libs/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src='libs/bootstrap.js'></script>
+<script type="text/javascript" src="libs/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="CheckListController.js"></script>
+
+</body>
+</html>

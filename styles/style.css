@@ -1,0 +1,35 @@
+.checkListBackground {
+    background-image: url('../images/greenBackground.jpg');
+    border-radius: 2vh;
+    width: 100vh;
+    margin-top: 15vh;
+    padding: 7vh;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: solid 2px red;
+    color: white;
+}
+
+input[placeholder]::-webkit-input-placeholder {
+    color: rgba(225,225,224,0.7);
+    font-weight: bolder;
+}
+
+li:nth-child(odd) {
+    background: rgba(255, 255, 0, 0.5);
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+li:nth-child(even) {
+background: rgba(154,205,50, 0.5);
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+input [type="checkbox"]{
+    width: 2vh;
+    height: 2vh;
+}
