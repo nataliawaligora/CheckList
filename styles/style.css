@@ -1,19 +1,38 @@
+
+.title {
+    font-size: 12vh;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 12vh;
+    font-family: Notram;
+}
+
+.formBackground {
+    background-image: url('../images/meadow.JPG');
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+
+}
+
 .checkListBackground {
     background-image: url('../images/greenBackground.jpg');
     border-radius: 2vh;
     width: 100vh;
-    margin-top: 15vh;
+    max-height: 50vh;
     padding: 7vh;
+    overflow-y:auto ;
+    overflow-x:auto ;
 }
 
 input[type="text"] {
     background: transparent;
-    border: solid 2px red;
+    border: solid 2px cornflowerblue;
     color: white;
 }
 
 input[placeholder]::-webkit-input-placeholder {
-    color: rgba(225,225,224,0.7);
+    color: rgba(225, 225, 224, 0.7);
     font-weight: bolder;
 }
 
@@ -24,12 +43,18 @@ li:nth-child(odd) {
 }
 
 li:nth-child(even) {
-background: rgba(154,205,50, 0.5);
+    background: rgba(154, 205, 50, 0.5);
     color: darkgreen;
     font-weight: bolder;
 }
 
-input [type="checkbox"]{
+input [type="checkbox"] {
     width: 2vh;
     height: 2vh;
+}
+
+.checked {
+    text-decoration: line-through;
+    text-decoration-color: red;
+
 }
